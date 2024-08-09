@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/main.css">
+
+  <title>Documentation</title>
+</head>
+
+<body>
+
+
+  <main class="page">
+
+
+    <aside class="sidebar">
+
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          Swiss Resort
+        </div>
+        <div class="sidebar-version">
+          v1.0.0
+        </div>
+      </div>
+
+
+      <ul class="nav-list">
+        <li>
+          <a class="link-active" data-transition href="#intro">Introduction</a>
+        </li>
+
+        <li class="has-children">
+          <a>
+            Getting started
+            <i class="icon" data-feather="chevron-right"></i>
+          </a>
+
+          <ul class="subnav">
+            <li>
+              <a data-transition href="#templateStructure">Template structure</a>
+            </li>
+
+            <li>
+              <a data-transition href="#basicHTMLMarkup">Basic HTML markup</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="has-children">
+          <a>
+            Helper classes
+            <i class="icon" data-feather="chevron-right"></i>
+          </a>
+
+          <ul class="subnav">
+            <li>
+              <a data-transition href="#layout">Layout</a>
+            </li>
+
+            <li>
+              <a data-transition href="#typography">Typography</a>
+            </li>
+
+            <li>
+              <a data-transition href="#otherHelpers">Others</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="has-children">
+          <a>
+            Customization
+            <i class="icon" data-feather="chevron-right"></i>
+          </a>
+
+          <ul class="subnav">
+            <li>
+              <a data-transition href="#lazyLoading">Lazy Loading</a>
+            </li>
+
+            <li>
+              <a data-transition href="#revealAnimations">Reveal animations</a>
+            </li>
+
+            <li>
+              <a data-transition href="#parallax">Parallax Effects</a>
+            </li>
+
+            <!-- <li>
+              <a data-transition href="#sassSource">Sass Source Files</a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li>
+          <a data-transition href="#credits">Credits</a>
+        </li>
+      </ul>
+
+    </aside>
+
+
+    <div class="page-content">
+
+
+      <div id="intro" class="content active">
+        <div class="row">
+          <div class="col-12">
+
+            <h1>Swiss Resort</h1>
+
+            <p class="lead">
+              Elegant Hotel & Resort Booking 
+              HTML5 Template
+            </p>
+
+            <p>
+              Hello and welcome to Swiss Resort user guide.
+              Here you’ll find how to use and customize the template.
+
+              If you have any questions or issues you can
+              always contact me through my email <a
+                href="mailto:creativelayers088@gmail.com">creativelayers088@gmail.com</a>
+              or through <a href="https://themeforest.net/user/creativelayers">my ThemeForest profile page</a>.
+              But in fact you can write me for any reason, I will be glad to talk.
+            </p>
+
+
+            <div class="content-block">
+              <h3>Important Notes:</h3>
+
+              <ul class="list">
+                <li>
+                  This is an HTML5 Template and <strong>NOT a WordPress Theme</strong>.
+                </li>
+
+                <li>
+                  Images you may have seen in the live preview are not included to the final item purchase.
+                </li>
+              </ul>
+            </div>
+
+
+            <!-- <div class="content-block">
+        <h3>HTML</h3>
+        <p>This is the folder that concerns you. It contains the main HTML, CSS and JS files. Make the customizations you need and upload this folder files to the server.</p>
+      </div>
+
+
+      <div class="content-block">
+        <h3>Documentation</h3>
+        <p>Information and setup guide for the item. You are reading this file now.</p>
+      </div>
+
+
+      <div class="alert alert-warning">
+        <h4 class="alert-title">No Images are Provided with the Item</h4>
+        Images you may have seen in the live preview are not included to the final item purchase. Grey placeholders are provided instead.
+      </div> -->
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="templateStructure" class="content">
+        <div class="row">
+          <div class="col-12">
+
+            <h1>Template Structure</h1>
+
+            <p>
+              Full list of plugins and libraries is available in Credits section of the documentation.
+            </p>
+
+            <div class="content-block">
+              <h3>Stylesheets</h3>
+
+              <ul class="list">
+                <li>
+                  <strong>css/vendors.css</strong>
+                  <br>
+                  Bundle of libraries styles.
+                </li>
+              </ul>
+
+              <ul class="list">
+                <li>
+                  <strong>css/style.css</strong>
+                  <br>
+                  Contains template styles with table of contents.
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-block">
+              <h3>Scripts</h3>
+
+              <ul class="list">
+                <li>
+                  <strong>js/vendors.js</strong>
+                  <br>
+                  Bundle of libraries scripts.
+                </li>
+              </ul>
+
+              <ul class="list">
+                <li>
+                  <strong>js/main.js</strong>
+                  <br>
+                  Contains template functionality with table of contents.
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-block">
+              <h3>Images</h3>
+
+              <ul class="list">
+                <li>
+                  <strong>img/</strong>
+                  <br>
+                  Images of the template sections.
+                  There are grey placeholders which you should replace with your own images.
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-block">
+              <h3>Fonts</h3>
+
+              <ul class="list">
+                <li>
+                  <strong>Google Fonts</strong>
+                  <br>
+                  All the fonts are served from Google Fonts server.
+                </li>
+              </ul>
+
+              <ul class="list">
+                <li>
+                  <strong>Font Awesome</strong>
+                  <br>
+                  Font Awesome icons.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div id="basicHTMLMarkup" class="content">
+        <div class="row">
+          <div class="col-12">
+
+            <h1>HTML Structure</h1>
+            <p>The general template markup is the same throughout the files. Please make sure that you have the correct
+              HTML markup first before doing any customizations.</p>
+
+
+            <div class="language-html content-block-code code-wrap">
+              <pre class="language-html">
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en" data-x="html" data-x-toggle="html-overflow-hidden"&gt;
+            &lt;head&gt;
+              &lt;!-- Required meta tags --&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+              &lt;!-- Google fonts --&gt;
+              &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+              &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+              &lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet"&gt;
+                
+              &lt;!-- Stylesheets --&gt;
+              &lt;link rel="stylesheet" href="css/vendors.css"&gt;
+              &lt;link rel="stylesheet" href="css/main.css"&gt;
+
+              &lt;title&gt;Swiss resort&lt;/title&gt;
+            &lt;/head&gt;
+
+            &lt;body&gt;
+              &lt;!-- cursor start --&gt;
+              &lt;div class="cursor js-cursor"&gt;
+                &lt;div class="cursor__wrapper"&gt;
+                  &lt;div class="cursor__follower js-follower"&gt;&lt;/div&gt;
+                  &lt;div class="cursor__label js-label"&gt;&lt;/div&gt;
+                  &lt;div class="cursor__icon js-icon"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;!-- cursor end --&gt;
+
+              &lt;main&gt;
+                ...
+              &lt;/main&gt;
+
+              &lt;!-- JavaScript --&gt;
+              &lt;script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"&gt;&lt;/script&gt;
+              &lt;script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"&gt;&lt;/script&gt;
+
+              &lt;script src="js/vendors.js"&gt;&lt;/script&gt;
+              &lt;script src="js/main.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+        </pre>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="layout" class="content">
+        <div class="row">
+          <div class="col-12">
+            <h1>Layout</h1>
+
+            <div class="content-block">
+              <h2>Margins and paddings</h2>
+              <p>Control the padding on one side of an element using the <code>p{t|r|b|l}-{size}</code> utilities.</p>
+              <p>All examples also works with paddings.</p>
+
+              <div class="language-css code-wrap content-block-code">
+                <pre class="language-css">
+            <code>
+              .mt-5 { margin-top: 5px; }
+              .mt-10 { margin-top: 10px; }
+              .mt-15 { margin-top: 15px; }
+              .mt-20 { margin-top: 20px; }
+              .mt-25 { margin-top: 25px; }
+              .mt-30 { margin-top: 30px; }
+              .mt-35 { margin-top: 35px; }
+              .mt-40 { margin-top: 40px; }
+              .mt-50 { margin-top: 50px; }
+              .mt-60 { margin-top: 60px; }
+              .mt-74 { margin-top: 74px; }
+              .mt-90 { margin-top: 90px; }
+              .mt-100 { margin-top: 100px; }
+            </code>
+          </pre>
+              </div>
+
+
+              <h3>Horizontal and vertical spacing</h3>
+              <p>Control horizontal and vertical spacing of an element using the <code>mx-{size}</code> utilities.</p>
+
+              <div class="language-html code-wrap content-block-code">
+                <pre class="language-html">
+            <code>
+              &lt;div class="mx-20"&gt;&lt;/div&gt;
+              &lt;div class="py-20"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+              </div>
+
+
+              <h3>Responsive</h3>
+              <p>To control the margin of an element at a specific breakpoint, add a <code>{screen}:</code> prefix to
+                any existing margin utility. For example, adding the class <code>md:mt-20</code> to an element would
+                apply the <code>mt-20</code> utility at medium screen sizes and below.</p>
+
+              <div class="language-html code-wrap content-block-code">
+                <pre class="language-html">
+            <code>
+              &lt;div class="mt-20 md:mt-15 sm:mt-10"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <h2>Global Layout Classes</h2>
+              <p>Classes that are used throughout the template to position page sections and section contents.</p>
+
+              <div class="language-css code-wrap content-block-code">
+                <pre class="language-css">
+            <code>
+              .layout-pt-md  { padding-top: 100px; }
+              .layout-pt-lg  { padding-top: 200px; }
+              
+              .layout-pb-md  { padding-bottom: 100px; }
+              .layout-pb-lg  { padding-bottom: 200px; }
+            </code>
+          </pre>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <h2>Layout Grids</h2>
+              <h3>Grid Gaps</h3>
+              <p>Template uses bootstrap rows but with additional gap functionality. You can change gap of an element
+                using the <code>{axis}-gap-{size}</code> utilities.</p>
+
+              <div class="language-html code-wrap content-block-code">
+                <pre class="language-html">
+            <code>
+              &lt;div class="row x-gap-0 y-gap-0"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-5 y-gap-5"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-10 y-gap-10"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-15 y-gap-15"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-20 y-gap-20"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-25 y-gap-25"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-30 y-gap-30"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-40 y-gap-40"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-50 y-gap-50"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-60 y-gap-60"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-85 y-gap-85"&gt;&lt;/div&gt;
+              &lt;div class="row x-gap-100 y-gap-100"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="typography" class="content">
+        <div class="row">
+          <div class="col-12">
+            <h1>Typography</h1>
+
+            <div class="content-block">
+              <h3>Font Size</h3>
+
+              <div class="language-css content-block-code code-wrap">
+                <pre class="language-css">
+            <code>
+              .text-9  { font-size: 9px; }
+              .text-11 { font-size: 11px; }
+              .text-13 { font-size: 13px; }
+              .text-14 { font-size: 15px; }
+              .text-16 { font-size: 17px; }
+              .text-17 { font-size: 21px; }
+              .text-18 { font-size: 24px; }
+              .text-20 { font-size: 30px; }
+              .text-24 { font-size: 40px; }
+              .text-30 { font-size: 50px; }
+              .text-35 { font-size: 52px; }
+              .text-40 { font-size: 60px; }
+              .text-45 { font-size: 64px; }
+              .text-50 { font-size: 72px; }
+              .text-55 { font-size: 92px; }
+            </code>
+          </pre>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <h3>Responsive</h3>
+
+              <div class="language-html content-block-code code-wrap">
+                <pre class="language-html">
+            <code>
+              &lt;h2 class="text-60 lg:text-30 sm:text-21"&gt;
+                Some title
+              &lt;/h2&gt;
+            </code>
+          </pre>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <h3>Font Colors</h3>
+
+              <div class="language-css content-block-code code-wrap">
+                <pre class="language-css">
+            <code>
+              .text-white { ... }
+              .text-black { ... }
+
+              .text-accent-1 { ... }
+              .text-accent-2 { ... }
+
+              .text-dark-1 { ... }
+              .text-dark-2 { ... }
+              .text-dark-3 { ... }
+
+              .text-light-1 { ... }
+              .text-light-1 { ... }
+
+              .text-info-1 { ... }
+              .text-info-2 { ... }
+              .text-warning-1 { ... }
+              .text-warning-2 { ... }
+              .text-error-1 { ... }
+              .text-error-2 { ... }
+              .text-success-1 { ... }
+              .text-success-2 { ... }
+            </code>
+          </pre>
+
+
+                <h3>Font Style & Decoration</h3>
+
+                <div class="language-css content-block-code code-wrap">
+                  <pre class="language-css">
+            <code>
+              .italic       { font-style: italic; }
+              .uppercase    { text-transform: uppercase; }
+              .capitalize   { text-transform: capitalize; }
+              .normal       { text-transform: none; }
+              .line-through { text-decoration: line-through; }
+              .underline    { text-decoration: underline; }
+            </code>
+          </pre>
+                </div>
+
+
+                <h3>Font Weight</h3>
+
+                <div class="language-css content-block-code code-wrap">
+                  <pre class="language-css">
+            <code>
+              .fw-300 { font-weight: 300 !important; }
+              .fw-400 { font-weight: 400 !important; }
+              .fw-500 { font-weight: 500 !important; }
+              .fw-600 { font-weight: 600 !important; }
+              .fw-700 { font-weight: 700 !important; }
+              .fw-800 { font-weight: 800 !important; }
+              .fw-900 { font-weight: 900 !important; }
+            </code>
+          </pre>
+                </div>
+
+
+                <h3>Line Height</h3>
+
+                <div class="language-css content-block-code code-wrap">
+                  <pre class="language-css">
+            <code>
+              .leading-1 { line-height: 1 !important; }
+              .leading-11 { line-height: 1.1 !important; }
+              .leading-12 { line-height: 1.2 !important; }
+              .leading-13 { line-height: 1.3 !important; }
+              .leading-14 { line-height: 1.4 !important; }
+              .leading-15 { line-height: 1.5 !important; }
+              .leading-16 { line-height: 1.6 !important; }
+              .leading-17 { line-height: 1.7 !important; }
+              .leading-18 { line-height: 1.8 !important; }
+              .leading-19 { line-height: 1.9 !important; }
+              .leading-2 { line-height: 2 !important; }
+            </code>
+          </pre>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+          <div id="otherHelpers" class="content">
+            <div class="row">
+              <div class="col-12">
+
+                <h1>Others</h1>
+                <p>Other classes that are used throughout the template.</p>
+
+                <div class="content-block">
+
+                  <h3>Background Colors</h3>
+
+                  <div class="language-css content-block-code code-wrap">
+                    <pre class="language-css">
+            <code>
+              .bg-white { ... }
+              .bg-black { ... }
+
+              .bg-accent-1 { ... }
+              .bg-accent-2 { ... }
+
+              .bg-dark-1 { ... }
+              .bg-dark-2 { ... }
+              .bg-dark-3 { ... }
+
+              .bg-light-1 { ... }
+              .bg-light-1 { ... }
+
+              .bg-info-1 { ... }
+              .bg-info-2 { ... }
+              .bg-warning-1 { ... }
+              .bg-warning-2 { ... }
+              .bg-error-1 { ... }
+              .bg-error-2 { ... }
+              .bg-success-1 { ... }
+              .bg-success-2 { ... }
+            </code>
+          </pre>
+                  </div>
+
+
+                  <h3>Ratios</h3>
+                  <p>Creates an <code>::before</code> element with a ratio and fill the entire space.</p>
+
+                  <div class="language-css content-block-code code-wrap">
+                    <pre class="language-css">
+            <code>
+              .ratio.ratio-1:1  {...}
+              .ratio.ratio-2:1  {...}
+              .ratio.ratio-2:3  {...}
+              .ratio.ratio-3:2  {...}
+              .ratio.ratio-3:4  {...}
+              .ratio.ratio-4:3  {...}
+              .ratio.ratio-16:9 {...}
+            </code>
+          </pre>
+                  </div>
+
+
+                  <h3>Display</h3>
+
+                  <div class="language-css content-block-code code-wrap">
+                    <pre class="language-css">
+            <code>
+              .d-none         { display: none !important; }
+              .d-flex         { display: flex !important; }
+              .d-block        { display: block !important; }
+              .d-inline-block { display: inline-block !important; }
+            </code>
+          </pre>
+                  </div>
+
+
+                  <h3>Sizes</h3>
+                  <p>Sets with and height of an element.</p>
+
+                  <div class="language-css content-block-code code-wrap">
+                    <pre class="language-css">
+            <code>
+              .size-25 { ... }
+              .size-40 { ... }
+              .size-50 { ... }
+              .size-60 { ... }
+              .size-70 { ... }
+              .size-80 { ... }
+              .size-90 { ... }
+              .size-130 { ... }
+            </code>
+          </pre>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div id="lazyLoading" class="content">
+            <div class="row">
+              <div class="col-12">
+
+                <h1>Lazy Loading</h1>
+                <p>All images (including backgrounds) are loaded in a deferred way to speed up pages loading.</p>
+
+
+                <div class="content-block">
+                  <h3>Images</h3>
+                  <p>For images in <code>&lt;img&gt;</code> tag, use <code>data-src</code> attribute with
+                    <code>.js-lazy</code> class.</p>
+
+                  <div class="language-html content-block-code code-wrap">
+                    <pre class="language-html">
+            <code>
+              &lt;img class="js-lazy" src="#" data-src="lazy.jpg" alt="A lazy image"&gt;
+            </code>
+          </pre>
+                  </div>
+                </div>
+
+
+                <div class="content-block">
+                  <h3>Background images</h3>
+                  <p>For background images, use <code>data-bg</code> attribute with <code>.js-lazy</code> class.</p>
+
+                  <div class="language-html content-block-code code-wrap">
+                    <pre class="language-html">
+            <code>
+              &lt;div class="bg-image js-lazy" data-bg="lazy.jpg"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div id="revealAnimations" class="content">
+            <div class="row">
+              <div class="col-12">
+
+                <h1>Reveal Animations</h1>
+
+                <div class="content-block">
+                  <h2>Single Animation</h2>
+                  <p>
+                    Template comes with several build in section reveal animations.
+                    To add or change an element’s reveal animation, you need to change <code>[data-anim]</code>
+                    attribute.
+                  </p>
+
+                  <div class="language-html content-block-code code-wrap">
+                    <pre class="language-html">
+            <code>
+              &lt;div data-anim="slide-up"&gt;&lt;/div&gt;
+              &lt;div data-anim="slide-down"&gt;&lt;/div&gt;
+              &lt;div data-anim="slide-left"&gt;&lt;/div&gt;
+              &lt;div data-anim="slide-right"&gt;&lt;/div&gt;
+              &lt;div data-anim="fade"&gt;&lt;/div&gt;
+              &lt;div data-anim="img-right"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+                  </div>
+
+
+                  <p>If animation doesn't work properly try to wrap the element you want to animate.</p>
+
+                  <div class="language-html content-block-code code-wrap">
+                    <pre class="language-html">
+            <code>
+              &lt;div data-anim="slide-up"&gt;
+                Element You want to animate
+              &lt;/div&gt;
+            </code>
+          </pre>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <h2>Animation Container</h2>
+                  <p>
+                    If you want to animate multiple elemets at once,
+                    wrap them in <code>data-anim-wrap</code> container and
+                    use <code>data-anim-child</code> insted of <code>data-anim</code> attribute.
+                  </p>
+
+                  <div class="language-html content-block-code code-wrap">
+                    <pre class="language-html">
+            <code>
+              &lt;div data-anim-wrap&gt;
+                &lt;div data-anim-child="slide-up"&gt;&lt;/div&gt;
+                &lt;div data-anim-child="slide-up"&gt;&lt;/div&gt;
+                &lt;div data-anim-child="slide-up"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <h2>Delay</h2>
+                  <p>
+                    By adding additional <code>delay-</code> property, you can change animation delay.
+                    Every next value adds 100 milliseconds.
+                  </p>
+
+                  <div class="language-html content-block-code code-wrap">
+                    <pre class="language-html">
+            <code>
+              &lt;div data-anim="slide-up delay-1"&gt;&lt;/div&gt;
+              &lt;div data-anim="slide-up delay-2"&gt;&lt;/div&gt;
+              &lt;div data-anim="slide-up delay-3"&gt;&lt;/div&gt;
+              ...
+              &lt;div data-anim="slide-up delay-20"&gt;&lt;/div&gt;
+
+              &lt;div data-anim-child="slide-up delay-1"&gt;&lt;/div&gt;
+              &lt;div data-anim-child="slide-up delay-2"&gt;&lt;/div&gt;
+              &lt;div data-anim-child="slide-up delay-3"&gt;&lt;/div&gt;
+              ...
+              &lt;div data-anim-child="slide-up delay-20"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div id="parallax" class="content">
+            <div class="row">
+              <div class="col-12">
+
+                <h1>Parallax Effects</h1>
+
+                <p>
+                  Use <code>[data-parallax]</code> attribute with value on parallax container
+                  and <code>[data-parallax-target]</code> to specify parallax item.
+                </p>
+
+                <div class="language-html content-block-code code-wrap">
+                  <pre class="language-html">
+          <code>
+            &lt;div data-parallax="0.7" class="h-lg"&gt;
+              &lt;div
+                data-parallax-target
+                class="bg-image js-lazy"
+                data-bg="some.jpg"
+              &gt;&lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div id="sassSource" class="content">
+            <div class="row">
+              <div class="col-12">
+
+                <h1>Sass Source Files</h1>
+                <p>This requires basic technical skills.</p>
+                <p>Swiss Resort comes with sass source files and simple gulp setup for it. To be able to edit sass files and compile them in css follow this steps:</p>
+
+                <p>1. Make sure that you have node.js installed, <a href="https://nodejs.org/en/">node.js</a>.</p>
+                <p>2. Open terminal in the template folder.</p>
+                <p>3. Run <code>npm install</code>.</p>
+                <p>4. Once the installation is ready, run <code>gulp build</code>. This will compile sass into css files and activate local server for better development process. Now you can make changes in scss files.</p>
+
+                <p>After that you can use <code>gulp server</code> command  instead of <code>gulp build6</code> to run the local server for development.</p>
+
+                <p>If you have any questions or concerns, you can submit a support request, we usually respond very quickly :)</p>
+                
+              </div>
+            </div>
+          </div> -->
+          
+          
+          <div id="credits" class="content">
+            <div class="row">
+              <div class="col-12">
+
+                <h1>Credits</h1>
+                <p>The following images, assets, icons, scripts or other files are used in the item as listed bellow:
+                </p>
+
+                <div class="content-block">
+                  <h3>Images</h3>
+
+                  <ul class="list">
+                    <li>
+                      <a target="_blank" href="https://www.pexels.com/">
+                        Pexels
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://unsplash.com/">
+                        Unsplash
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <div class="content-block">
+                  <h3>Fonts</h3>
+
+                  <ul class="list">
+                    <li>
+                      <a target="_blank" href="https://fonts.adobe.com/fonts/sofia">
+                        Sofia Pro
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <div class="content-block">
+                  <h3>Icons</h3>
+
+                  <ul class="list">
+                    <li>
+                      <a target="_blank" href="https://fontawesome.com/">
+                        Font Awesome
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://icomoon.io/">
+                        Icomoon
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://feathericons.com/">
+                        Feather Icons
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="content-block">
+                  <h3>Scripts</h3>
+
+                  <ul class="list tt-n">
+                    <li>
+                      <a target="_blank" href="https://greensock.com/gsap/">
+                        GSAP 3 Animation Engine
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="http://scrollmagic.io/">
+                        ScrollMagic
+                      </a>
+                    </li>
+
+                    <li>
+                      <a target="_blank" href="https://free.nkdev.info/jarallax/">
+                        Jarallax
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://popper.js.org/">
+                        Popper.js
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://atomiks.github.io/tippyjs/">
+                        Tippy.js
+                      </a>
+                    </li>
+
+                    <li>
+                      <a target="_blank" href="https://idangero.us/swiper/">
+                        Swiper
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://isotope.metafizzy.co/filtering.html">
+                        Isotope
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://www.andreaverlicchi.eu/lazyload/">
+                        LazyLoad.js
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+  </main>
+
+
+  <!-- JS plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="assets/main.js"></script>
+
+</body>
+
+</html>
