@@ -8500,6 +8500,7 @@ body.is-cursor-active * {
   padding-top: 200px;
 }
 
+
 .layout-pb-lg {
   padding-bottom: 200px;
 }
@@ -11037,4 +11038,98 @@ body.is-cursor-active * {
   cursor: pointer;
 
 }
+.ratesec{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.custom-video {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.ratesec {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: 700;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.h1class {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 0.875rem; /* Smaller font size for smaller screens */
+  }
+
+  th, td {
+    padding: 0.75rem; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 0.75rem; /* Even smaller font size for very small screens */
+  }
+
+  th, td {
+    padding: 0.5rem; /* Adjust padding for very small screens */
+  }
+}
