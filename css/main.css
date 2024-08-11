@@ -11175,3 +11175,12 @@ tbody tr:hover {
     right: 10px; 
   }
 }
+  .flatpickr-calendar {
+    max-width: 100%; 
+  }
+
+  @media (max-width: 768px) {
+    .flatpickr-calendar {
+      width: 100%; 
+    }
+  }

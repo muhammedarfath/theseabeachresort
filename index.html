@@ -224,10 +224,11 @@
             <!-- Date Picker -->
             <div class="searchFormItem js-select-control js-form-dd js-calendar">
               <div class="searchFormItem__button" data-x-click="calendar">
-                <div>
-                  <input type="text" id="checkin-checkout" placeholder="Check In - Check Out" readonly>
+                <div class="searchFormItem__button" data-x-click="calendar">
+                  <label for="checkin-checkout">Check In - Check Out</label>
+                  <input type="text" id="checkin-checkout" readonly tabindex="-1">
+                  <i class="icon-arrow-down ml-10"></i>
                 </div>
-                <i class="icon-arrow-down ml-10"></i>
               </div>
             </div>
   
@@ -1013,6 +1014,38 @@
             });
           }
         });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const inputField = document.getElementById('checkin-checkout');
+  
+      // Initialize Flatpickr
+      function initializeFlatpickr() {
+        const isMobile = window.innerWidth <= 768;
+        inputField.flatpickr({
+          mode: "range",
+          dateFormat: "Y-m-d",
+          minDate: "today",
+          showMonths: isMobile ? 1 : 2,
+        });
+      }
+  
+      initializeFlatpickr();
+  
+      // Reinitialize Flatpickr on window resize to adapt to screen size
+      window.addEventListener('resize', function () {
+        inputField.flatpickr().destroy();
+        initializeFlatpickr();
+      });
+  
+      // Prevent the keyboard from showing up on mobile devices
+      inputField.addEventListener('touchstart', function (e) {
+        e.preventDefault(); // Prevent default touch behavior
+        inputField.blur(); // Ensure input field doesn't get focused
+        inputField.flatpickr().open(); // Open the calendar
       });
     });
   </script>
